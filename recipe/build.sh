@@ -3,12 +3,13 @@ set -e
 
 if [ ! -z ${LIBRARY_PREFIX+x} ]; then
     USE_PREFIX=$LIBRARY_PREFIX
+    LIBRARY_PREFIX_COIN=$LIBRARY_PREFIX/include/coin
 else
     USE_PREFIX=$PREFIX
 fi
 
 if [[ "${target_platform}" == win-* ]]; then
-  EXTRA_FLAGS="--enable-msvc --with-coinutils-lib=${LIBRARY_PREFIX}/lib/CoinUtils.lib --with-coinutils-incdir=\${LIBRARY_PREFIX}\/include\/coin"
+  EXTRA_FLAGS="--enable-msvc --with-coinutils-lib=${LIBRARY_PREFIX}/lib/CoinUtils.lib --with-coinutils-incdir=\${LIBRARY_PREFIX_COIN}"
   BLAS_LIB="${LIBRARY_PREFIX}/lib/cblas.lib"
   LAPACK_LIB="${LIBRARY_PREFIX}/lib/lapack.lib"
 else
