@@ -20,6 +20,7 @@ requirements:
   build:
     - gnuconfig
     - {{ compiler('c') }}
+    - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}  # [unix]
     - pkg-config  # [unix]
@@ -44,10 +45,10 @@ requirements:
 
 test:
   commands:
-    - test -f $PREFIX/lib/libOsi${SHLIB_EXT}    # [unix]
+    - test -f $PREFIX/lib/libOsi${SHLIB_EXT}  # [unix]
     - test -f $PREFIX/include/coin/OsiConfig.h  # [unix]
-    - if not exist %LIBRARY_LIB%/libOsi.lib exit 1 # [win]
-    - if not exist %LIBRARY_INC%/coin/OsiConfig.h exit 1 # [win]
+    - if not exist %LIBRARY_LIB%/libOsi.lib exit 1  # [win]
+    - if not exist %LIBRARY_INC%/coin/OsiConfig.h exit 1  # [win]
 
 
 about:
