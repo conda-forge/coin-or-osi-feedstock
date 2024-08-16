@@ -8,7 +8,7 @@ else
 fi
 
 if [[ "${target_platform}" == win-* ]]; then
-  EXTRA_FLAGS="--enable-msvc"
+  EXTRA_FLAGS="--enable-msvc --with-coinutils-lib ${LIBRARY_PREFIX}/lib/CoinUtils.lib"
   BLAS_LIB="${LIBRARY_PREFIX}/lib/cblas.lib"
   LAPACK_LIB="${LIBRARY_PREFIX}/lib/lapack.lib"
 else
