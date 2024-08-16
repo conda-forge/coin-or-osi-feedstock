@@ -3,7 +3,6 @@ set -e
 
 if [ ! -z ${LIBRARY_PREFIX+x} ]; then
     USE_PREFIX=$LIBRARY_PREFIX
-    LIBRARY_PREFIX_COIN=$LIBRARY_PREFIX/include/coin
 else
     USE_PREFIX=$PREFIX
 fi

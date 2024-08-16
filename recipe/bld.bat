@@ -3,6 +3,8 @@ set PREFIX_WIN=%PREFIX%
 set PREFIX=%PREFIX:\=/%
 set LIBRARY_PREFIX_WIN=%LIBRARY_PREFIX%
 set LIBRARY_PREFIX=%LIBRARY_PREFIX:\=/%
+set LIBRARY_PREFIX_COIN=%LIBRARY_PREFIX%/include/coin
+
 
 rem Temporarily store the expanded value of PREFIX
 set TEMP_PREFIX=%PREFIX%
