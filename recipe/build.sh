@@ -9,7 +9,7 @@ else
 fi
 
 if [[ "${target_platform}" == win-* ]]; then
-  EXTRA_FLAGS="--enable-msvc --with-coinutils-lib=${LIBRARY_PREFIX}/lib/CoinUtils.lib --with-coinutils-incdir=\${LIBRARY_PREFIX_COIN}"
+  EXTRA_FLAGS="--enable-msvc --with-coinutils-lib=${LIBRARY_PREFIX}/lib/libCoinUtils.lib --with-coinutils-incdir=\${LIBRARY_PREFIX_COIN}"
   BLAS_LIB="${LIBRARY_PREFIX}/lib/cblas.lib"
   LAPACK_LIB="${LIBRARY_PREFIX}/lib/lapack.lib"
 else
