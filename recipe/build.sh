@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
+# LIBRARY_PREFIX will only be available on Windows
 if [ ! -z ${LIBRARY_PREFIX+x} ]; then
     USE_PREFIX=$LIBRARY_PREFIX
 else
