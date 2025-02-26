@@ -16,9 +16,9 @@ else
   # Get an updated config.sub and config.guess (for mac arm and lnx aarch64)
   cp $BUILD_PREFIX/share/gnuconfig/config.* ./Osi 
   cp $BUILD_PREFIX/share/gnuconfig/config.* .
-  COINUTLS_LIB=( --with-coinutils-lib='-L${PREFIX}/lib -lCoinUtils -lblas -llapack' )
-  COINUTILS_INC=( --with-coinutils-incdir='${PREFIX}/include/coin' )
-  EXTRA_FLAGS=()
+  COINUTLS_LIB=()
+  COINUTILS_INC=()
+  EXTRA_FLAGS=( -lblas -llapack )
 fi
 
 ./configure \
