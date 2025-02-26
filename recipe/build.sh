@@ -18,7 +18,7 @@ else
   cp $BUILD_PREFIX/share/gnuconfig/config.* .
   COINUTLS_LIB=()
   COINUTILS_INC=()
-  EXTRA_FLAGS=( -lblas -llapack )
+  EXTRA_FLAGS=()
 fi
 
 ./configure \
