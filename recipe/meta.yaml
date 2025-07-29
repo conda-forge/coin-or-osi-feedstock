@@ -15,6 +15,7 @@ build:
   number: 5
   run_exports:
     - {{ pin_subpackage(name, min_pin='x.x', max_pin='x.x') }}
+    - mkl-static  # [win]
 
 requirements:
   build:
@@ -34,10 +35,11 @@ requirements:
   host:
     - coin-or-utils
     - blas-devel
-    - libblas
-    - libcblas
-    - liblapack
-    - liblapacke
+    - libblas  # [unix]
+    - libcblas  # [unix]
+    - liblapack  # [unix]
+    - liblapacke  # [unix]
+    - mkl-static  # [win]
     - zlib
     - bzip2
   run_constrained:
