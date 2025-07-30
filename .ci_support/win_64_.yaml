@@ -1,7 +1,7 @@
 bzip2:
 - '1'
 c_compiler:
-- vs2019
+- vs2022
 c_stdlib:
 - vs
 channel_sources:
@@ -11,7 +11,7 @@ channel_targets:
 coin_or_utils:
 - '2.11'
 cxx_compiler:
-- vs2019
+- vs2022
 target_platform:
 - win-64
 zlib:
