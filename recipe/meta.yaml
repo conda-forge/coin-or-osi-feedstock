@@ -38,7 +38,7 @@ requirements:
     - libcblas  # [unix]
     - liblapack  # [unix]
     - liblapacke  # [unix]
-    - mkl  # [win]
+    - mkl-devel  # [win]
     - zlib
     - bzip2
   run_constrained:
