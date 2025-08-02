@@ -33,12 +33,6 @@ requirements:
     - m2-base  # [win]
   host:
     - coin-or-utils
-    - blas-devel
-    - libblas  # [unix]
-    - libcblas  # [unix]
-    - liblapack  # [unix]
-    - liblapacke  # [unix]
-    - mkl  # [win]
     - zlib
     - bzip2
   run_constrained:
