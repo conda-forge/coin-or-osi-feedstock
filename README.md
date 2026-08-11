@@ -28,7 +28,6 @@ operations are supported:
   - extracting solution information;
   - invoking the underlying solver's branch-and-bound component.
 
-
 Current build status
 ====================
 
